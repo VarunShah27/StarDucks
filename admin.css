@@ -1,0 +1,45 @@
+body {
+	/*background: #1E1930;*/
+	background-image: url(../star/images/bk2.png);
+	color: #d2d1d5;
+	width: 99%;
+	height: 100%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+}
+tr:nth-child(even) {
+	background-color: #2e2649;
+}
+tr:nth-child(odd) {
+	background-color: #423b5b;
+}
+
+th {
+	background-color: #342f44;
+	color: white;
+	padding: 1rem;
+}
+h1 {
+	text-align: center;
+	color: white;
+}
+h2 a {
+	text-decoration: none;
+	color: white;
+}
+.back a {
+	color: red;
+}
+td {
+	padding: 1rem 2rem;
+}
+.noBorder {
+	border: none !important;
+}
+
+.main {
+	display: flex;
+	justify-content: space-evenly;
+}

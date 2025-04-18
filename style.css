@@ -1,0 +1,360 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #5f5f5f;
+	background-color: #ffffff;
+	font-family: "verdana, tahoma, arial, helvetica, verdana, sans-serif";
+	min-width: 1040px; /* Mindestbreite verhindert Umbruch und Anzeigefehler in modernen Browsern */
+}
+
+ul,
+li {
+	margin: 0px 2px;
+	font-size: 9pt;
+}
+
+#wrapper {
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+/* oben*/
+div#top {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #727272;
+	color: #000000;
+}
+
+div#header {
+	margin: 0 auto;
+	padding: 0;
+	/*  background-color: #F1CB66;*/
+	background-image: url(images/bg.jpg);
+	width: 1071px;
+	height: 150px;
+}
+
+div#header-inner {
+	width: 990px;
+	margin: 0 auto;
+}
+
+div#headerleft {
+	margin-top: 8px;
+	padding: 0;
+	text-align: left;
+	color: #ffffff;
+	float: left;
+}
+
+div#headerright {
+	margin-left: 300px;
+	padding: 0px 5px;
+	width: 570px;
+	color: #ffffff;
+	text-align: right;
+	height: 150px;
+}
+.headertextbig {
+	display: flex;
+	font-size: 44px;
+	font-family: "prata";
+	padding-top: 49px;
+	color: whitesmoke;
+	z-index: -1;
+	opacity: 10;
+	flex-direction: column;
+}
+/*slider*/
+@keyframes slidy {
+	0% {
+		left: 0%;
+	}
+	20% {
+		left: 0%;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+body {
+	margin: 0;
+}
+div#slider {
+	overflow: hidden;
+}
+div#slider figure img {
+	width: 20%;
+	float: left;
+}
+div#slider figure {
+	position: relative;
+	height: 400%;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slidy infinite;
+}
+
+/* Hauptteil*/
+#main {
+	background-color: #99ccff;
+	background: url(images/gradient.jpg) repeat-x;
+	padding: 0;
+	margin: auto;
+}
+
+#main-inner {
+	width: 1020px;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+
+/* Navigation links*/
+#navigationleft {
+	font-size: 14pt;
+	width: 50px;
+	float: left;
+	padding-left: 1px;
+	padding-bottom: 1px;
+}
+
+div#navigationleft h2 {
+	color: #ffffff;
+	background-color: #727272;
+	font-size: 16pt;
+	font-weight: bold;
+	margin: 15px 35px;
+	padding: 5px;
+	font-family: "century gothic", calibri, georgia, serif;
+	letter-spacing: 10px;
+	line-height: 20px;
+}
+
+.menu {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	background-color: transparent;
+	line-height: 16px;
+}
+
+.menu li a,
+.menu li a:active,
+.menu li a:visited {
+	color: #333333;
+	background-color: transparent;
+	width: 210px;
+	padding: 3px;
+	margin: 0;
+	text-decoration: wavy;
+	font-size: 12pt;
+	display: flex;
+	font-weight: normal;
+	line-height: 25px;
+	border-bottom: 1px solid #999999;
+	font-family: "century gothic";
+}
+
+.menu li a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "prata";
+	color: #000000;
+	font-weight: normal;
+	background-color: #ececec;
+}
+
+/* Inhalt*/
+div#content {
+	display: block;
+	margin-left: 235px;
+	width: 810px;
+	font-size: 10pt;
+	font-family: "century gothic", georgia, calibri, serif;
+	line-height: 20px;
+	text-align: left;
+}
+
+/*heading-about us,our menu*/
+div#content h2 {
+	color: #808080;
+	background-color: transparent;
+	font-family: "prata";
+	font-size: 28pt;
+	text-align: center;
+	margin: 1px;
+	padding: 15px;
+}
+
+/*more to GRab*/
+div#content h4 {
+	color: #c0c0c0;
+	background-color: #ffffff;
+	font-size: 20pt;
+	font-weight: bold;
+	margin-right: 1px;
+	padding: 20px;
+	font-family: "century gothic", georgia, calibri, serif;
+	letter-spacing: 1px;
+	text-align: center;
+}
+/*paragraphs*/
+div#content p {
+	display: block;
+	font-size: 13pt;
+	margin-right: 10px;
+	font-family: "prata";
+	padding: 1px;
+}
+
+/*unten*/
+div#footer {
+	background-color: rgb(250, 193, 126);
+	clear: both;
+	color: #ffffff;
+	height: 60px;
+	line-height: 58px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	font-family: "prata";
+	font-size: 20px;
+	font-weight: bold;
+}
+div#footerbox {
+	margin: 0 auto;
+	padding-left: 240px;
+	width: 750px;
+	font-size: 16pt;
+	font-family: "prata";
+	font-weight: bold;
+	letter-spacing: 1px;
+	background-color: transparent;
+}
+div#footerinnerbox1 {
+	margin: 2px;
+	padding: 3px;
+	font-family: "century gothic", georgia, calibri, serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	width: 250px;
+	float: left;
+	background-color: transparent;
+	text-align: left;
+}
+div#footerinnerbox1 h2 {
+	margin: 0;
+	padding: 2px;
+	font-size: 14pt;
+	font-variant: small-caps;
+	color: #ffffff;
+	background-color: transparent;
+	width: 200px;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	line-height: 20px;
+}
+div#footerinnerbox2 {
+	margin: 0;
+	padding: 0;
+	font-family: "calibri, georgia, serif";
+	font-weight: bold;
+	width: 250px;
+	float: right;
+	text-align: left;
+	font-size: 10pt;
+	font-weight: normal;
+	text-align: justify;
+}
+div#footerinnerbox2 h2 {
+	margin: 0;
+	padding: 2px;
+	font-size: 14pt;
+	font-variant: small-caps;
+	color: #ffffff;
+	background-color: transparent;
+	width: 240px;
+	text-align: left;
+	border-bottom: 1px solid #ffffff;
+	line-height: 20px;
+}
+.footermenu {
+	list-style-type: none;
+	padding: 5px 0px 0px 0px;
+	margin: 0;
+	text-align: left;
+	background-color: transparent;
+}
+.footermenu li a,
+.footermenu li a:active,
+.footermenu li a:visited {
+	color: #c0c0c0;
+	background-color: transparent;
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-size: 10pt;
+	font-family: "century gothic, georgia, calibri, serif";
+	display: block;
+	font-weight: bold;
+}
+.footermenu li a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "century gothic, georgia, calibri, serif";
+	color: #ffffff;
+	font-weight: bold;
+	background-color: transparent;
+}
+/* allgemeine Angaben*/
+a:link,
+a:visited,
+a:active {
+	color: #c0c0c0;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+a:hover {
+	color: #000000;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.footerlink {
+	clear: both;
+	background-color: rgb(250, 206, 152);
+	text-align: right;
+}
+#footer a {
+	text-decoration: none;
+	color: white;
+
+	position: absolute;
+	left: 2rem;
+}
